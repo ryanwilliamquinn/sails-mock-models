@@ -1,0 +1,35 @@
+{
+  "name": "sails-mock-models",
+  "version": "0.0.1",
+  "description": "Simple mocks for sails js model queries",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanwilliamquinn/sails-mock-models.git"
+  },
+  "keywords": [
+    "sails",
+    "sails.js",
+    "testing",
+    "mock"
+  ],
+  "author": "Ryan Quinn <ryanwilliamquinn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanwilliamquinn/sails-mock-models/issues"
+  },
+  "homepage": "https://github.com/ryanwilliamquinn/sails-mock-models#readme",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "sinon": "^1.15.4",
+    "waterline": "^0.10.26"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "sails-memory": "^0.10.5",
+    "should": "^7.0.2"
+  }
+}
