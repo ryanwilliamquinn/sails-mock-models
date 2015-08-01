@@ -1,7 +1,12 @@
+'use strict';
+
+/* jshint expr:true */
+
 var Waterline = require('waterline');
 var sailsmemory = require('sails-memory');
 var mock = require('../lib/index');
 var should = require('should');
+
 describe('test mocks', function() {
 
     var User;
@@ -85,12 +90,12 @@ describe('test mocks', function() {
         var users = [{name: 'winnie'}, {name:'matilda'}]; 
         var findStub = mock.mockModel(User, 'find', users);
 
-        User.find({name: 'anything'}, function (results) {
+        User.find({name: 'anything'}, function (err, results) {
             findStub.restore();
             results.should.eql(users);
             findStub.calledOnce.should.be.true;
-        })
-        .done(done, done);
+            done();
+        });
     });
 
     it('should work with populate', function (done) {
