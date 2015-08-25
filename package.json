@@ -1,6 +1,6 @@
 {
   "name": "sails-mock-models",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple mocks for sails js model queries",
   "main": "lib/index.js",
   "scripts": {
