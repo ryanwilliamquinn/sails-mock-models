@@ -1,6 +1,6 @@
 {
   "name": "sails-mock-models",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple mocks for sails js model queries",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ryanwilliamquinn/sails-mock-models#readme",
   "dependencies": {
+    "lodash": "^3.10.1",
     "sinon": "^1.15.x",
     "waterline": "^0.10.x"
   },
